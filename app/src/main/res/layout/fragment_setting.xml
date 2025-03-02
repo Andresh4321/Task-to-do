@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.fragment.SettingFragment"
+    android:padding="16dp">
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lavender"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="20dp"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <!-- Profile Section -->
+    <LinearLayout
+        android:id="@+id/profile_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_person_24"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/profile_image"
+            android:layout_marginEnd="16dp"
+            android:shape="oval" />
+
+        <TextView
+            android:id="@+id/Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_gravity="center_vertical"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <!-- Edit Profile Section -->
+    <LinearLayout
+        android:id="@+id/edit_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/editcat"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_person_24"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/edit_image"
+            android:layout_marginEnd="16dp"
+            android:shape="oval" />
+
+        <TextView
+            android:id="@+id/edit_gnere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasks"
+            android:layout_gravity="center_vertical"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+    <!-- Edit Profile Section -->
+    <LinearLayout
+        android:id="@+id/Edit_Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_person_24"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/edit_image"
+            android:layout_marginEnd="16dp"
+            android:shape="oval" />
+
+        <TextView
+            android:id="@+id/Edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:layout_gravity="center_vertical"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+
+
+
+
+    <!-- Log Out Section -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout_section"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        android:background="@color/white"
+        android:onClick="onLogoutClick"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/Log"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_home_24"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/logout_image"
+            android:layout_marginEnd="16dp"
+            android:shape="oval" />
+
+        <TextView
+            android:id="@+id/Log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:layout_gravity="center_vertical"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+</LinearLayout>
